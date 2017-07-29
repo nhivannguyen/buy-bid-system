@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<customers>
+  <customer>
+    <fname>Test</fname>
+    <lname>Test</lname>
+    <email>test@ex.co</email>
+    <id>56529954659211cac6217c9.97315820</id>
+    <pass>b8eb5bd586be850671a489d27e9b53ac</pass>
+  </customer>
+</customers>

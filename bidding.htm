@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Student: VAN NHI NGUYEN (101256529)
+Assignment 2: COS30020 Web application Developments
+File function:
+Display the bidding page
+-->
+<html>
+
+<head>
+    <title>ShopOnline Bidding Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+    <script type="text/javascript" src="bidding.js"></script>
+    <script type="text/javascript" src="username.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ShopOnline</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="listing.htm">Listing</a>
+                </li>
+                <li class="active">
+                    <a href="bidding.htm">Bidding</a>
+                </li>
+                <li>
+                    <a href="maintenance.htm">Maintenance</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Hi,
+                <span id="cusname"><script type="text/javascript">
+                        getName();
+                    </script></span>
+                </a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1 class="col-xs-offset-1">Bidding</h1>
+    </div>
+
+    <p class="col-xs-offset-1">
+        Current auction items are listed below. To place a bid for an item, use the Place Bid button.<br/>
+        <strong>NOTE:</strong> Item remaining time and bid prices are updated every 5 seconds.
+    </p>
+
+    <div id="disp" class="container">
+    <script type="text/javascript">
+        dispBid();
+    </script>
+    </div>
+
+
+
+</body>
+
+</html>
